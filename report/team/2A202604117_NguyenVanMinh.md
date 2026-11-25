@@ -16,17 +16,17 @@
 
 ## 3. Đóng góp cụ thể
 
-- Hoàn thành gắn nhãn độc lập toàn bộ 20 ca lỗi theo nguyên nhân gốc (Google PAIR) vào cột Người gắn nhãn 2 và dự thảo bảng khắc phục đo được cho 5 loại lỗi (chờ so nhãn độc lập với Người gắn nhãn 1 trước khi push `bang_loi.md`).
+- Hoàn thành gắn nhãn độc lập toàn bộ 20 ca lỗi theo nguyên nhân gốc (Google PAIR), đối chiếu với Người gắn nhãn 1 (Tào Quang Vinh) đạt đồng thuận **20/20 = 100%**, chốt quy tắc phân biệt các ca dễ lẫn và hoàn thiện bảng khắc phục 5 ca (Ca `9, 7, 18, 4, 17`) trong `report/team/bang_loi.md`.
 - Hoàn thiện `report/team/chi_so.md`: điền 3 chỉ số tính thử E1 theo `src/kiem_so.py`, đề xuất 2 chỉ số bổ sung (1 chỉ số dùng, 1 chỉ số an toàn cho lỗi ngầm), xây dựng 12 event có `trace_id` kèm kiểm tra chéo ánh xạ chỉ số → event và 3 dòng rủi ro kinh tế E2 lấy số từ A4, B1, B4 (`simulated`).
-- Dựng và cập nhật 5/7 mục (`1, 2, 3, 4, 7`) cho `report/team/ho_so_launch_v0.md` từ kết quả CP1–CP2 (`src/lab13.py`, `src/kiem_so.py`, `bang_chi_phi.md`) với trạng thái đúng quy định (`Giả lập` cho mục `1, 2, 3, 7`) và một vai trò phụ trách cụ thể cho từng mục.
-- *(Chờ cập nhật tiếp sau khi so nhãn CP3 với Vinh, ghép CP4 `pilot_plan.yaml` và duyệt chéo Gate 2a.)*
+- Dựng và cập nhật 6/7 mục (`1, 2, 3, 4, 5, 7`) cho `report/team/ho_so_launch_v0.md` từ kết quả CP1–CP3 (`src/lab13.py`, `src/kiem_so.py`, `bang_chi_phi.md`, `bang_loi.md`) với trạng thái đúng quy định (`Giả lập` cho mục `1, 2, 3, 7`; `Xong, có bằng chứng` cho mục `4, 5`) và một vai trò phụ trách cụ thể cho từng mục.
+- *(Chờ cập nhật tiếp sau khi ghép CP4 `pilot_plan.yaml`, chốt đề xuất cuối và duyệt chéo Gate 2a.)*
 
 ## 4. Bằng chứng
 
+- `report/team/bang_loi.md` (hai bộ nhãn độc lập đồng thuận 20/20 = 100%, quy tắc phân biệt và bảng khắc phục 5 loại lỗi).
 - `report/team/chi_so.md` (E1 đủ 5 chỉ số, 12 event có `trace_id`, kiểm tra chéo và 3 dòng rủi ro kinh tế E2).
-- `report/team/ho_so_launch_v0.md` (đã điền 5/7 mục `1, 2, 3, 4, 7`, chuẩn hoá trạng thái và vai trò phụ trách).
-- `report/team/bang_loi.md` (đã gắn độc lập 20/20 ca cục bộ, sẽ push sau khi so với Người gắn nhãn 1).
-- *(Sẽ bổ sung hash commit chốt sau khi nhóm hoàn thiện CP3–CP5.)*
+- `report/team/ho_so_launch_v0.md` (đã điền 6/7 mục `1, 2, 3, 4, 5, 7`, chuẩn hoá trạng thái và vai trò phụ trách).
+- Commit `b340480` và commit CP3 tiếp theo.
 
 ## 5. Công cụ AI đã dùng
 
