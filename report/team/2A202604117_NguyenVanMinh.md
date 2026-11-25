@@ -18,15 +18,15 @@
 
 - Hoàn thành gắn nhãn độc lập toàn bộ 20 ca lỗi theo nguyên nhân gốc (Google PAIR), đối chiếu với Người gắn nhãn 1 (Tào Quang Vinh) đạt đồng thuận **20/20 = 100%**, chốt quy tắc phân biệt các ca dễ lẫn và hoàn thiện bảng khắc phục 5 ca (Ca `9, 7, 18, 4, 17`) trong `report/team/bang_loi.md`.
 - Hoàn thiện `report/team/chi_so.md`: điền 3 chỉ số tính thử E1 theo `src/kiem_so.py`, đề xuất 2 chỉ số bổ sung (1 chỉ số dùng, 1 chỉ số an toàn cho lỗi ngầm), xây dựng 12 event có `trace_id` kèm kiểm tra chéo ánh xạ chỉ số → event và 3 dòng rủi ro kinh tế E2 lấy số từ A4, B1, B4 (`simulated`).
-- Dựng và cập nhật 6/7 mục (`1, 2, 3, 4, 5, 7`) cho `report/team/ho_so_launch_v0.md` từ kết quả CP1–CP3 (`src/lab13.py`, `src/kiem_so.py`, `bang_chi_phi.md`, `bang_loi.md`) với trạng thái đúng quy định (`Giả lập` cho mục `1, 2, 3, 7`; `Xong, có bằng chứng` cho mục `4, 5`) và một vai trò phụ trách cụ thể cho từng mục.
-- *(Chờ cập nhật tiếp sau khi ghép CP4 `pilot_plan.yaml`, chốt đề xuất cuối và duyệt chéo Gate 2a.)*
+- Dựng và hoàn thiện đủ **7/7 mục** cùng đề xuất **Go có điều kiện** (4 điều kiện gắn người phụ trách và ngày kiểm tra, nêu rõ các con số bất lợi như power ~64% ở mức 5 điểm % và B4 xem lại 100% tốn 0,98×–1,03× `simulated`) trong `report/team/ho_so_launch_v0.md` sẵn sàng cho mốc 17:00 duyệt chéo Gate 2a.
+- *(Chờ cập nhật tiếp sau khi hoàn tất duyệt chéo Gate 2a `phieu_cham.md` và `group_report.md`.)*
 
 ## 4. Bằng chứng
 
 - `report/team/bang_loi.md` (hai bộ nhãn độc lập đồng thuận 20/20 = 100%, quy tắc phân biệt và bảng khắc phục 5 loại lỗi).
 - `report/team/chi_so.md` (E1 đủ 5 chỉ số, 12 event có `trace_id`, kiểm tra chéo và 3 dòng rủi ro kinh tế E2).
-- `report/team/ho_so_launch_v0.md` (đã điền 6/7 mục `1, 2, 3, 4, 5, 7`, chuẩn hoá trạng thái và vai trò phụ trách).
-- Commit `b340480` và commit CP3 tiếp theo.
+- `report/team/ho_so_launch_v0.md` (hoàn chỉnh 7/7 mục và đề xuất Go có điều kiện sẵn sàng duyệt chéo Gate 2a).
+- Các commit đã push (`b340480`, `c2f7dbc` và commit chốt hồ sơ).
 
 ## 5. Công cụ AI đã dùng
 
