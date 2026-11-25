@@ -1,5 +1,7 @@
 # Phiếu chấm hội đồng Gate 2a
 
+Theo xác nhận của lab coach, nhóm MMV được miễn điền kết quả duyệt chéo. Nhóm giữ mẫu phiếu bên dưới.
+
 Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo bằng chứng trong hồ sơ, không theo cách trình bày: một đề xuất No-go có lý do bằng số được điểm cao hơn một đề xuất Go bỏ qua con số bất lợi.
 
 - Nhóm chấm (hội đồng): ...
