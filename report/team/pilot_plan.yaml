@@ -36,6 +36,10 @@ pilot:
     control_share: 0.5
     randomized: true
   rollout: [0.10, 0.25, 0.50]  # 4, 10 rồi 20 nhân viên trong nhánh trợ lý
+  execution:
+    # Áp dụng từ bước rollout 10%, tính cả lượt chạy đầu tiên.
+    max_attempts_per_request: 2
+    on_attempts_exhausted: chuyen_nhan_vien  # Khi cả hai lượt đều lỗi.
   primary_metric:
     name: dong_trong_24h_khong_mo_lai_7_ngay
     baseline: 0.70
@@ -78,8 +82,8 @@ pilot:
     - >-
       NẾU chi phí biến đổi mỗi việc thành công vượt 8.000 đ theo trace token/tool
       và số phút xem lại/làm lại ghi trong pilot
-      TRONG 2 tuần liên tiếp THÌ PM giữ nguyên rollout, thu hẹp về noi_dia
-      và giới hạn 2 lượt chạy; nếu đang trong cửa sổ phân tích chính, ghi nhận
+      TRONG 2 tuần liên tiếp THÌ PM tạm dừng tăng rollout, thu hẹp về noi_dia
+      và giữ giới hạn 2 lượt chạy; nếu đang trong cửa sổ phân tích chính, ghi nhận
       pilot ban đầu đã dừng trước khi đổi phạm vi KHÔNG THÌ giữ cấu hình hiện tại
       và chỉ xét tăng rollout khi các điều kiện khác cũng đạt.
     - >-
