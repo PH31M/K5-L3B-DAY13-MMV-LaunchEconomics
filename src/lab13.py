@@ -1,9 +1,11 @@
 """Lab 13 · Định giá agent và lập kế hoạch pilot (Gate 2a) — bài làm của nhóm (file nộp).
-Chạy trong thư mục src/: python3 lab13.py   (cần pandas; Nhiệm vụ D cần thêm statsmodels)
-Không cần khoá API. Điền các chỗ ghi VIẾT Ở ĐÂY (đánh dấu TODO CP1…CP4). Dữ liệu trong hai file CSV là giả lập.
+Chạy trong thư mục src/: python3 lab13.py (cần pandas).
+Dữ liệu trong hai file CSV là giả lập. Không cần khoá API.
 Bản gốc chưa sửa nằm ở lab13_starter.py.
 """
 import math
+from statistics import NormalDist
+
 import pandas as pd
 
 # Bảng giá GIẢ ĐỊNH của lab (không phải giá thật của nhà cung cấp nào)
@@ -192,6 +194,50 @@ def in_bang_b4(runs, reqs, pham_vi, chi_phi_pham_vi):
               f'Hòa vốn ở {phut_hoa_von:.1f} phút xem lại/yêu cầu')
 
 
+def co_mau_hai_ty_le(p1, p2, alpha=0.05, power=0.80):
+    """Tính cỡ mẫu mỗi nhóm cho kiểm định hai phía với hai nhóm bằng nhau."""
+    normal = NormalDist()
+    z_alpha = normal.inv_cdf(1 - alpha / 2)
+    z_power = normal.inv_cdf(power)
+    p_bar = (p1 + p2) / 2
+    se_gop = math.sqrt(2 * p_bar * (1 - p_bar))
+    se_rieng = math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))
+    return math.ceil(((z_alpha * se_gop + z_power * se_rieng) / (p2 - p1)) ** 2)
+
+
+def in_ket_qua_cp4(reqs, pham_vi):
+    """In năm kết quả D1 và mốc an toàn từ dữ liệu đợt chạy thử."""
+    icc = 0.02
+    m_mac_dinh = 75
+    nhan_vien_moi_nhom = 20
+    depot_moi_nhom = 6
+
+    n5 = co_mau_hai_ty_le(0.70, 0.75)
+    de75 = 1 + (m_mac_dinh - 1) * icc
+    n_theo_nhan_vien = math.ceil(n5 * de75)
+    so_nv_can = math.ceil(n_theo_nhan_vien / m_mac_dinh)
+
+    n6 = co_mau_hai_ty_le(0.70, 0.76)
+    # Giải bất đẳng thức cỡ mẫu hiệu dụng >= n6 theo số yêu cầu mỗi người.
+    m6 = math.ceil(n6 * (1 - icc) / (nhan_vien_moi_nhom - n6 * icc))
+    de6 = 1 + (m6 - 1) * icc
+    n_thuc = nhan_vien_moi_nhom * m6
+    n_hieu_dung = n_thuc / de6
+
+    print('\nCP4 · Cỡ mẫu pilot và tỉ lệ mở lại')
+    print(f'D1a: {n5} yêu cầu/nhóm')
+    print(f'D1b: DE={de75:.2f}; {n_theo_nhan_vien} yêu cầu, {so_nv_can} nhân viên/nhóm')
+    print(f'D1c: n hiệu dụng < {nhan_vien_moi_nhom / icc:.0f}')
+    print(f'D1d: n hiệu dụng < {depot_moi_nhom / icc:.0f}')
+    print(f'D1e: cần {n6} hiệu dụng; {m6} yêu cầu/người; DE={de6:.2f}; '
+          f'{n_thuc} thực tế/nhóm; {n_hieu_dung:.2f} hiệu dụng/nhóm')
+
+    for ten, mau in (('Toàn mẫu', reqs), ('Phạm vi pilot', pham_vi)):
+        mo_lai = int(mau['mo_lai_trong_7_ngay'].eq(1).sum())
+        ti_le = mo_lai / len(mau) if len(mau) else math.nan
+        print(f'{ten}: mở lại 7 ngày {mo_lai}/{len(mau)} = {ti_le:.2%}')
+
+
 if __name__ == '__main__':
     runs = pd.read_csv('logix_runs.csv')
     reqs = pd.read_csv('logix_requests.csv', keep_default_na=False)
@@ -222,7 +268,4 @@ if __name__ == '__main__':
 
     in_bang_do_nhay(runs, reqs, ket_qua)
     in_bang_b4(runs, reqs, pham_vi, ket_qua_a4)
-
-    # TODO CP4 · Nhiệm vụ D: cỡ mẫu.
-    #   from statsmodels.stats.proportion import proportion_effectsize
-    #   from statsmodels.stats.power import NormalIndPower
+    in_ket_qua_cp4(reqs, pham_vi)
