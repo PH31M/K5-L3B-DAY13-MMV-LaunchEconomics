@@ -2,19 +2,19 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Lớp: L3A hoặc L3B
-- Repo nhóm: `K5-L3A-DAY13-TenNhom-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
+- Tên nhóm: MMV
+- Lớp: L3B
+- Repo nhóm: `https://github.com/PH31M/K5-L3B-DAY13-MMV-LaunchEconomics.git`
 - URL repo, nhánh nộp, commit chốt:
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
-|   4 |        |      |       |        |         |
+|   1 | Nguyễn Hữu An | 2A202604024 | 26ai.annh2@vinuni.edu.vn | AnnNguy3n | Người viết code |
+|   2 | Phạm Hoàng Đức Minh | 2A202604114 | ducminh03102005@gmail.com | PH31M | Người kiểm số |
+|   3 | Nguyễn Văn Minh | 2A202604117 | vm140205@gmail.com | vm140205-collab | người gắn nhãn 2 |
+|   4 | Tào Quang Vinh | 2A202604081 | qvinhh2312@gmail.com | qvinhh2312 | người gắn nhãn 1 |
 
 Bốn vai của lab:
 
