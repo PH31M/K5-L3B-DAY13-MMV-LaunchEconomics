@@ -4,9 +4,8 @@
 
 - Tên nhóm: MMV
 - Lớp: L3B
-- Repo nhóm: [K5-L3B-DAY13-MMV-LaunchEconomics](https://github.com/PH31M/K5-L3B-DAY13-MMV-LaunchEconomics)
-- Nhánh nộp: [`main`](https://github.com/PH31M/K5-L3B-DAY13-MMV-LaunchEconomics/tree/main)
-- Commit chốt: commit đầu nhánh `main` tại thời điểm nộp.
+- Repo nhóm: `https://github.com/PH31M/K5-L3B-DAY13-MMV-LaunchEconomics.git`
+- URL repo, nhánh nộp, commit chốt:
 
 ## Thành viên
 
@@ -36,11 +35,21 @@ report/team/MSSV_HoTen.md
 
 Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 
-## NguyenHuuAn-2A202604024
+Sao chép mục dưới đây cho từng thành viên.
 
-- Phụ trách viết và chạy mã tính chi phí, độ nhạy và cỡ mẫu (CP1, CP2, CP4).
-- Phân vai nhóm, soạn kế hoạch pilot và hướng dẫn chạy CP4.
-- Bằng chứng: [mã tính](src/lab13.py), [kế hoạch pilot](report/team/pilot_plan.yaml) và [báo cáo cá nhân](report/team/2A202604024_NguyenHuuAn.md).
+## HoVaTen-MSSV
+
+### Phần việc phụ trách
+
+-
+
+### Đóng góp cụ thể
+
+-
+
+### Bằng chứng
+
+-
 
 ## PhamHoangDucMinh-2A202604114
 
@@ -55,15 +64,3 @@ Ví dụ: `report/team/20241234_NguyenVanAn.md`.
 ### Bằng chứng
 
 - `report/team/bang_chi_phi.md`, `src/kiem_so.py`, báo cáo cá nhân `report/team/2A202604114_PhamHoangDucMinh.md`.
-
-## NguyenVanMinh-2A202604117
-
-- Gắn nhãn bộ thứ hai cho 20 ca, đối chiếu nhãn và hoàn thiện bảng khắc phục cùng người gắn nhãn 1.
-- Đặc tả chỉ số, event và rủi ro, tổng hợp hồ sơ launch v0.
-- Bằng chứng: [báo cáo cá nhân](report/team/2A202604117_NguyenVanMinh.md).
-
-## TaoQuangVinh-2A202604081
-
-- Kiểm tra kết quả CP1–CP2, điền bảng A1–A4 và rà nhãn `simulated`.
-- Chuẩn bị và rà bộ nhãn nháp CP3 có tham khảo Claude trước khi so với bộ nhãn thứ hai.
-- Bằng chứng: [báo cáo cá nhân](report/team/2A202604081_TaoQuangVinh.md).
