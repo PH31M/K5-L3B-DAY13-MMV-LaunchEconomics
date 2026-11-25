@@ -50,3 +50,17 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Bằng chứng
 
 -
+
+## PhamHoangDucMinh-2A202604114
+
+### Phần việc phụ trách
+
+- Người kiểm số: tính lại độc lập nhiệm vụ A và B để đối chiếu với `src/lab13.py`, điền `report/team/bang_chi_phi.md`.
+
+### Đóng góp cụ thể
+
+- Tính tay A1 (1,20 · 1,25 · 1,25); tính lại A2–A4 và B1–B4 bằng script độc lập; điền bảng A1–A4, B1–B4 (số có nhãn `simulated`); kiểm trước số D1 và E1.
+
+### Bằng chứng
+
+- `report/team/bang_chi_phi.md`, `src/kiem_so.py`, báo cáo cá nhân `report/team/2A202604114_PhamHoangDucMinh.md`.
