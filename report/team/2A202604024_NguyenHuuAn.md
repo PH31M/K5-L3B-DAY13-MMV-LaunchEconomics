@@ -10,13 +10,13 @@
 
 ## 2. Phần việc phụ trách
 
-Tôi phụ trách viết và chạy `src/lab13.py` cho CP1, CP2 và CP4. Tôi cũng phân vai trong nhóm và viết hướng dẫn chạy, kiểm tra kế hoạch pilot.
+Em phụ trách viết và chạy `src/lab13.py` cho CP1, CP2 và CP4. Em cũng phân vai trong nhóm và viết hướng dẫn chạy, kiểm tra kế hoạch pilot.
 
 ## 3. Đóng góp cụ thể
 
-- **CP1:** Tôi viết ba phép tính A1 và mô hình chi phí A2–A4. Khi tính chi phí mỗi việc thành công, tôi cộng chi phí của mọi lượt chạy, kể cả lượt lỗi, rồi chia cho 978 yêu cầu thành công. Kết quả toàn mẫu là **4.472 đ/việc** (`simulated`).
-- **CP2:** Tôi dùng lại mô hình để tính các kịch bản độ nhạy B1–B4. Giới hạn **2 lượt** cho chi phí cả hệ thống thấp nhất, khoảng **6,90 triệu đ** trên mẫu 1.200 yêu cầu (`simulated`).
-- **CP4:** Tôi tính cỡ mẫu và tỷ lệ mở lại, rồi điền kế hoạch pilot có đối chứng và 4 luật dừng. Với **20 nhân viên mỗi nhánh** và **299 yêu cầu mỗi người**, 5.980 yêu cầu thực tế mỗi nhánh tương đương khoảng **859 yêu cầu hiệu dụng** sau khi chia cho hệ số thiết kế 6,96.
+- **CP1:** Em viết ba phép tính A1 và mô hình chi phí A2–A4. Khi tính chi phí mỗi việc thành công, em cộng chi phí của mọi lượt chạy, kể cả lượt lỗi, rồi chia cho 978 yêu cầu thành công. Kết quả toàn mẫu là **4.472 đ/việc** (`simulated`).
+- **CP2:** Em dùng lại mô hình để tính B1–B4. Nếu dừng sau một lượt, nhân viên phải nhận 319 yêu cầu. Cho phép lượt thứ hai giảm số này xuống 234. Giới hạn **2 lượt** cho chi phí cả hệ thống thấp nhất, **6.901.220 đ** trên mẫu 1.200 yêu cầu (`simulated`).
+- **CP4:** Em tính cỡ mẫu và tỷ lệ mở lại, rồi điền kế hoạch pilot có đối chứng và 4 luật dừng. Với **20 nhân viên mỗi nhánh** và **299 yêu cầu mỗi người**, 5.980 yêu cầu thực tế mỗi nhánh tương đương khoảng **859 yêu cầu hiệu dụng** sau khi chia cho hệ số thiết kế 6,96.
 
 ## 4. Bằng chứng
 
@@ -25,9 +25,9 @@ Tôi phụ trách viết và chạy `src/lab13.py` cho CP1, CP2 và CP4. Tôi c�
 
 ## 5. Công cụ AI đã dùng
 
-- Tôi dùng Codex để rà yêu cầu, đối chiếu minh chứng trong Git và hỗ trợ soạn báo cáo.
-- Tôi kiểm tra số liệu bằng kết quả chạy `lab13.py` và đối chiếu A2, B3, D1e với script kiểm số độc lập `kiem_so.py`. Ba phép thử A1 đạt **1,20 · 1,25 · 1,25**. Tôi kiểm tra thêm `pilot_plan.yaml` bằng `yaml.safe_load`.
+- Em dùng Codex để rà yêu cầu, đối chiếu minh chứng trong Git và hỗ trợ soạn báo cáo.
+- Em kiểm tra số liệu bằng kết quả chạy `lab13.py` và đối chiếu A2, B3, D1e với script kiểm số độc lập `kiem_so.py`. Ba phép thử A1 đạt **1,20 · 1,25 · 1,25**. Em kiểm tra thêm `pilot_plan.yaml` bằng `yaml.safe_load`.
 
 ## 6. Tự đánh giá
 
-Tôi tái sử dụng được mô hình chi phí từ CP1 để so các kịch bản CP2 trên cùng dữ liệu. Tôi cần chú ý hơn đến khả năng đạt cỡ mẫu của từng nhân viên, vì với cách chia đã chọn, nếu chênh lệch thật chỉ là **5 điểm phần trăm** thì power ước tính còn khoảng **64%**.
+Em tái sử dụng được mô hình chi phí từ CP1 để so các kịch bản CP2 trên cùng dữ liệu. Em cần chú ý hơn đến khả năng đạt cỡ mẫu của từng nhân viên, vì với cách chia đã chọn, nếu chênh lệch thật chỉ là **5 điểm phần trăm** thì power ước tính còn khoảng **64%**.

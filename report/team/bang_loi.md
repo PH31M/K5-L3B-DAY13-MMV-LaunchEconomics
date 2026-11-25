@@ -2,9 +2,9 @@
 
 20 ca lỗi nằm trong `docs/Ngay13_Lab13_De_bai_hoc_vien.docx`. Năm loại theo Google PAIR: **Do người dùng · Hệ thống · Ngữ cảnh · Giới hạn hệ thống · Ngầm**. Gắn nhãn theo nguyên nhân gốc, không theo chỗ cần sửa.
 
-## Hai bộ nhãn độc lập
+## Hai bộ nhãn trước khi đối chiếu
 
-Người gắn nhãn 1: Tào Quang Vinh (`2A202604081`, nhãn nháp có Claude gợi ý, người gắn nhãn 1 đã review) · Người gắn nhãn 2: Nguyễn Văn Minh (`2A202604117`, gắn độc lập trước khi so nhãn) (gắn trong 8 phút, không trao đổi)
+Tào Quang Vinh rà từng ca trên bản nháp có gợi ý của Claude. Nguyễn Văn Minh ghi bộ nhãn thứ hai trước khi so với Vinh. Nhóm giữ nguyên hai cột bên dưới. Vì bộ thứ nhất có AI hỗ trợ, tỉ lệ đồng thuận chỉ cho biết hai bộ nhãn trùng nhau bao nhiêu ca.
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
@@ -32,8 +32,6 @@ Người gắn nhãn 1: Tào Quang Vinh (`2A202604081`, nhãn nháp có Claude g
 **Tỉ lệ đồng thuận:** 20 / 20 = 100%
 
 ## Quy tắc phân biệt cho các ca không trùng
-
-Mỗi ca không trùng một câu. Đồng thuận dưới 80% thì ghi định nghĩa đã viết lại.
 
 - Không có ca không trùng (đồng thuận 20/20 = 100%, đạt vượt ngưỡng 80%). Ghi chú quy tắc gốc mà hai người cùng áp dụng cho các ca dễ lẫn:
   - **Ca 6, 9 (`Do người dùng`):** nguyên nhân gốc là khách chọn sai mục hoặc nhập sai loại mã; việc trợ lý thiếu gợi ý thuộc phần khắc phục.

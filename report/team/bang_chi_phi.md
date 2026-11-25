@@ -93,6 +93,6 @@ Chi phí cả hệ thống = tổng chi phí trợ lý + 12.000 đ × số yêu 
 
 Phạm vi `noi_dia` + `hang_nang` (982 yêu cầu): 948 yêu cầu có ít nhất một lần chạy `ok` × 5 phút xem lại × 2.000 đ = 9.480.000 đ; 48 ca `lam_lai` × 9 phút × 2.000 đ = 864.000 đ; token + tool của mọi lần chạy trong phạm vi = 224.513 đ; chia cho 900 việc thành công.
 
-- Chi phí mỗi việc thành công khi xem lại 100% (`noi_dia` + `hang_nang`), so với 12.000 đ: **11.743 đ = 0,98×** (làm lại 9 phút/ca, theo đề) [simulated]. Dùng phút làm lại thật trong dữ liệu (trung bình 15,3 phút/ca, trung vị 14,5) thì **≈ 12.415 đ = 1,03×** [simulated], tức xem lại 100% còn đắt hơn nhân viên tự làm.
+- Chi phí mỗi việc thành công khi xem lại 100% (`noi_dia` + `hang_nang`), so với 12.000 đ: **11.743 đ = 0,98×** (làm lại 9 phút/ca, theo đề) [simulated]. Dùng phút làm lại từ cột `phut_lam_lai_simulated` (trung bình 15,3 phút/ca, trung vị 14,5) thì **≈ 12.415 đ = 1,03×** [simulated], tức xem lại 100% còn đắt hơn nhân viên tự làm.
 - Mức hoà vốn: mỗi lần xem lại phải ≤ **5,1 phút** (làm lại 9 phút) hoặc ≤ **4,8 phút** (làm lại 15,3 phút) [simulated].
 - Kết quả này nói gì về thứ pilot cần học được? Khi xem lại 100%, tiền xem lại chiếm khoảng 90% chi phí và trợ lý gần như không tiết kiệm được gì. Pilot phải đo được tỉ lệ xem lại có thể giảm an toàn xuống bao nhiêu, và mỗi lần xem lại có ngắn hơn 5 phút được không (bằng phút đo thật thay cho phút simulated).
