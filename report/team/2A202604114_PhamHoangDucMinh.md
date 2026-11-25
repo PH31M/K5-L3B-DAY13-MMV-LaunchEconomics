@@ -24,14 +24,14 @@ Người kiểm số: tính lại độc lập các con số của nhiệm vụ 
 
 - `report/team/bang_chi_phi.md`: bảng A1–A4 và B1–B4 đã điền, mọi số tính từ cột `_simulated` có nhãn `simulated`.
 - `src/kiem_so.py`: script kiểm số độc lập, in ra toàn bộ số ở trên. Chạy trong `src/`: `python3 -I kiem_so.py`.
-- Đối chiếu với `src/lab13.py` của người viết code (commit `2dbac0e`): `python3 lab13.py` in `Ba phép thử đáp án biết trước: ĐẠT`; bảng A2, A3 và A4 in ra trùng với số trong `bang_chi_phi.md`. Gọi trực tiếp `mo_hinh` cho 9 kịch bản B1, cặp B2 và giới hạn 1, 2, 3 lần (B3) cũng ra đúng các số đó. `lab13.py` chưa in bảng B (còn `TODO CP2`).
-- Commit: (điền sau khi commit và push)
+- Đối chiếu với `src/lab13.py` của người viết code (commit `4a36191`): `python3 lab13.py` in `Ba phép thử đáp án biết trước: ĐẠT`; các bảng A2, A3, A4, B1, B2, B3 và B4 in ra trùng với số trong `bang_chi_phi.md` (B4: 11.743 đ và 12.415 đ; hoà vốn 5,1 và 4,8 phút).
+- Commit: `e26a9ea` ("B1-B4"), đã push và merge vào `main` ở `7459cf9`.
 
 ## 5. Công cụ AI đã dùng
 
-- Claude Code (model Claude Sonnet 5.5): đọc repo và tài liệu để xác định vai người kiểm số; viết script kiểm số độc lập và soạn nội dung bảng trong `bang_chi_phi.md` từ kết quả script; soạn bản nháp báo cáo này.
+- Claude Code (model Claude Sonnet 5.5): đọc repo và tài liệu để xác định vai người kiểm số; viết script kiểm số độc lập và soạn nội dung bảng trong `bang_chi_phi.md` từ kết quả script; hỗ trợ soạn báo cáo này.
 - Cách tự kiểm tra: tính tay A1 trước khi nhìn kết quả script; so từng số của script với bảng đối chiếu trong `docs/Lab13_Huong_dan_chi_tiet_buoi_chieu.md` (lệch dưới 2%); chạy kiểm tra nhất quán (nửa mức tăng, tổng hai tác động riêng); tự đếm lại các số 994 và 51 từ CSV; so với output của `lab13.py`. Các câu trả lời có số đều lấy từ output của script, không lấy từ trí nhớ của AI.
 
 ## 6. Tự đánh giá
 
- Đã đối chiếu và điền đủ bảng A1–A4, B1–B4; số khớp đáp án trong dung sai 2% và khớp output của `lab13.py` (A1–A4, B1–B3). Còn thiếu: đối chiếu B4 và D1 khi người viết code làm xong `TODO CP2` và `TODO CP4`, và điền commit ở mục 4.
+Tôi đã tính lại độc lập và điền đủ bảng A1–A4, B1–B4. Số khớp đáp án trong dung sai 2% và khớp output của `lab13.py`. Số D1 và E1 tôi đã tính trước bằng `src/kiem_so.py`.
