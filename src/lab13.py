@@ -20,7 +20,7 @@ def so_lan_chay_ky_vong(p, k=None):
     """Số lần chạy trung bình cho 1 yêu cầu khi mỗi lần đúng với xác suất p.
     k = số lần chạy tối đa; k=None nghĩa là chạy lại đến khi đúng."""
     # raise NotImplementedError('VIẾT Ở ĐÂY')
-    if k is not None and not (isinstance(k, int) or k < 1):
+    if k is not None and (not isinstance(k, int) or k < 1):
         raise TypeError("k phải là số nguyên dương")
     if p <= 0 or p > 1:
         raise ValueError("p phải nằm trong khoảng (0, 1]")
@@ -32,7 +32,7 @@ def so_lan_chay_ky_vong(p, k=None):
 def ti_le_thanh_cong(p, k=None):
     """Xác suất yêu cầu thành công sau tối đa k lần chạy."""
     # raise NotImplementedError('VIẾT Ở ĐÂY')
-    if k is not None and not (isinstance(k, int) or k < 1):
+    if k is not None and (not isinstance(k, int) or k < 1):
         raise TypeError("k phải là số nguyên dương")
     if p <= 0 or p > 1:
             raise ValueError("p phải nằm trong khoảng (0, 1]")
